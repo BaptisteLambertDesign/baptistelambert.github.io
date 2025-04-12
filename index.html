@@ -1,42 +1,45 @@
-<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baptiste Lambert – Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>BAPTISTE<br>LAMBERT</h1>
+    <div class="logo">BAPTISTE<br>LAMBERT</div>
     <nav>
-      <a href="#projets">Travaux</a>
-      <a href="#apropos">À propos</a>
+      <a href="/home">Travaux</a>
+      <a href="/about">À propos</a>
     </nav>
   </header>
 
   <main>
-    <section id="projets" class="gallery">
-      <!-- À compléter avec tes projets -->
-      <div class="project">
-        <a href="#"><img src="img/placeholder.jpg" alt="Nom du projet"></a>
-        <h2>Nom du projet</h2>
-        <p>Catégorie</p>
+    <!-- Cette section variera selon la page -->
+    <section class="home-gallery">
+      <div class="project-thumb">
+        <a href="/projet-01">
+          <img src="img/placeholder.jpg" alt="Projet 01">
+          <div class="project-info">
+            <h2>Nom du projet</h2>
+            <p>Type de projet</p>
+          </div>
+        </a>
       </div>
-      <!-- Duplique ce bloc pour chaque projet -->
+      <!-- Répéter pour chaque projet -->
     </section>
   </main>
 
   <footer>
-    <div>
+    <div class="footer-left">
       <p>info[@]baptistelambert.com</p>
       <p>+33 (0)6 64 98 76 24</p>
     </div>
-    <div>
+    <div class="footer-center">
       <p>Designer pluridisciplinaire<br><span>/Multidisciplinary designer</span></p>
     </div>
-    <div>
+    <div class="footer-right">
       <a href="https://instagram.com/baptiss_lambert" target="_blank">Instagram</a><br>
       <a href="https://linkedin.com/in/baptiste-lambert-07517b10b" target="_blank">LinkedIn</a>
     </div>
