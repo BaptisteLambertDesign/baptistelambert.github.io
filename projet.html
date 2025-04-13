@@ -1,0 +1,186 @@
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baptiste Lambert – Projet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Baskervville&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --fond: #F5F3EF;
+      --texte: #2A2A2A;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--fond);
+      color: var(--texte);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, .serif {
+      font-family: 'Baskervville', serif;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: var(--fond);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 1.5rem 2rem;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-weight: 600;
+      font-size: 1.2rem;
+      line-height: 1.2;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--texte);
+      font-weight: 600;
+    }
+
+    main {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      padding: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .project-images {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .project-images img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .project-text {
+      flex: 1;
+      position: sticky;
+      top: 100px;
+      align-self: flex-start;
+    }
+
+    .project-text h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-text p {
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+    }
+
+    footer div {
+      flex: 1 1 200px;
+      margin: 1rem 0;
+    }
+
+    footer a {
+      color: var(--texte);
+      text-decoration: none;
+    }
+
+    footer span {
+      font-style: italic;
+      font-size: 0.9em;
+      opacity: 0.6;
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        margin-top: 1rem;
+      }
+
+      main {
+        flex-direction: column;
+      }
+
+      .project-text {
+        position: static;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">BAPTISTE<br>LAMBERT</div>
+    <nav>
+      <a href="/home">Travaux</a>
+      <a href="/about">À propos</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project-images">
+      <img src="img/placeholder.jpg" alt="Image projet 1">
+      <img src="img/placeholder.jpg" alt="Image projet 2">
+      <img src="img/placeholder.jpg" alt="Image projet 3">
+    </div>
+    <aside class="project-text">
+      <h1>Nom du projet</h1>
+      <p class="serif">Type de projet / Discipline</p>
+      <p>Description du projet en quelques lignes, expliquant le contexte, les enjeux, la démarche ou les spécificités du design.</p>
+      <p>Autres précisions : matériaux utilisés, client, collaboration, etc.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <p>info[@]baptistelambert.com</p>
+      <p>+33 (0)6 64 98 76 24</p>
+    </div>
+    <div class="footer-center">
+      <p>Designer pluridisciplinaire<br><span>/Multidisciplinary designer</span></p>
+    </div>
+    <div class="footer-right">
+      <a href="https://instagram.com/baptiss_lambert" target="_blank">Instagram</a><br>
+      <a href="https://linkedin.com/in/baptiste-lambert-07517b10b" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>
