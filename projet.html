@@ -37,6 +37,7 @@
       align-items: flex-start;
       padding: 1.5rem 2rem;
       z-index: 1000;
+      font-weight: 500;
       flex-wrap: wrap;
     }
 
@@ -117,6 +118,7 @@
     footer {
       display: flex;
       justify-content: space-between;
+      font-weight: 500;
       padding: 2rem;
       flex-wrap: wrap;
       font-size: 0.9rem;
@@ -188,11 +190,13 @@
 </head>
 <body>
   <header>
-    <nav>
+    <div class="header-left">
       <a href="/home">BAPTISTE<br>LAMBERT</a>
+    </div>
+    <div class="header-right">
       <a href="/work">Travaux<span>/Work</span></a><br>
       <a href="/about">À propos<span>/about</span></a>
-    </nav>
+    </div>
   </header>
 
   <main>
