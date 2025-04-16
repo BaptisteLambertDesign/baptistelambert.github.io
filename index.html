@@ -129,15 +129,12 @@
       text-align: left;
     }
 
-    .footer-center {
-      margin: 1rem 0;
-      text-align: center;
-    }
-
-    .footer-right {
-      margin: 1rem 0;
-      text-align: right;
-    }
+.footer-right {
+  flex: 1 1 200px;
+}
+.footer-center {
+  flex: 1 1 200px;
+}
 
     footer a {
       color: var(--texte);
@@ -164,9 +161,10 @@
         margin-top: 1rem;
       }
 
-      main {
-        flex-direction: column;
-      }
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
       .project-text {
         position: static;
