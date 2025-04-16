@@ -1,5 +1,3 @@
-<html lang="fr">
-<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +15,13 @@
       padding: 0;
     }
 
+    html, body {
+      height: 100%;
+    }
+
     body {
+      display: flex;
+      flex-direction: column;
       font-family: 'STIX Two Text', serif;
       background-color: var(--fond);
       color: var(--texte);
@@ -26,7 +30,7 @@
 
     header {
       position: sticky;
-      top: 0px;
+      top: 0;
       background-color: var(--fond);
       display: flex;
       justify-content: space-between;
@@ -38,26 +42,20 @@
       width: 100%;
     }
 
-    header-left {
+    .header-left {
       flex: 1 1 200px;
       margin: 1rem 0;
       text-align: left;
     }
 
-    header-center {
-      flex: 1 1 200px;
-      margin: 1rem 0;
-      text-align: center;
-    }
-
-    header-right {
+    .header-right {
       flex: 1 1 200px;
       margin: 1rem 0;
       text-align: right;
     }
 
     .logo {
-      font-weight: 600;
+      font-weight: 500;
       font-size: 1.2rem;
       line-height: 1.2;
     }
@@ -71,70 +69,69 @@
     header a {
       text-decoration: none;
       color: var(--texte);
-      font-weight: 600;
+      font-weight: 500;
     }
 
     main {
-      display: flex;
-      flex-direction: row;
-      gap: 2rem;
+      flex: 1;
       padding: 2rem;
-      flex-wrap: wrap;
     }
 
-    .project-images {
-      flex: 2;
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
+    .home-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
     }
 
-    .project-images img {
+    .project-thumb {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .project-thumb img {
       width: 100%;
       height: auto;
       display: block;
+      transition: transform 0.3s ease;
     }
 
-    .project-text {
-      flex: 1;
-      position: sticky;
-      top: 100px;
-      align-self: flex-start;
+    .project-thumb:hover img {
+      transform: scale(1.05);
     }
 
-    .project-text h1 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-
-    .project-text p {
-      margin-bottom: 1rem;
-      font-size: 0.95rem;
+    .project-info {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: var(--texte);
     }
 
     footer {
-      position: fixed;
-      background-color: var(--fond);
       display: flex;
       justify-content: space-between;
-      font-weight: 500;
+      align-items: flex-start;
       padding: 2rem;
+      font-weight: 500;
       flex-wrap: wrap;
       width: 100%;
+      background-color: var(--fond);
+    }
+
+    .footer-left, .footer-center, .footer-right {
+      flex: 1 1 200px;
     }
 
     .footer-left {
-      flex: 1 1 200px;
-      margin: 1rem 0;
       text-align: left;
     }
 
-.footer-right {
-  flex: 1 1 200px;
-}
-.footer-center {
-  flex: 1 1 200px;
-}
+    .footer-center {
+      text-align: center;
+    }
+
+    .footer-right {
+      text-align: right;
+    }
 
     footer a {
       color: var(--texte);
@@ -146,7 +143,6 @@
       vertical-align: sub;
       font-size: 0.8em;
       opacity: 1;
-
     }
 
     @media screen and (max-width: 768px) {
@@ -161,21 +157,17 @@
         margin-top: 1rem;
       }
 
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-      .project-text {
-        position: static;
-      }
-
       footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
       }
 
+      .footer-left,
+      .footer-center,
+      .footer-right {
+        text-align: center;
+      }
     }
   </style>
 </head>
