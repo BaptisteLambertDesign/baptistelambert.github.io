@@ -1,217 +1,71 @@
+<html lang="fr" data-page="home">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Baptiste Lambert – Designer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=STIX+Two+Text&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --fond: #121c18;
-      --texte: #e8e6d8;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html, body {
-      height: 100%;
-    }
-
-    body {
-      display: flex;
-      flex-direction: column;
-      font-family: 'STIX Two Text', serif;
-      background-color: var(--fond);
-      color: var(--texte);
-      line-height: 1.6;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      background-color: var(--fond);
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 1.5rem 2rem;
-      z-index: 1000;
-      font-weight: 500;
-      flex-wrap: wrap;
-      width: 100%;
-      letter-spacing:1px;
-      line-height: 1.4;
-    }
-
-    .header-left {
-      flex: 1 1 50px;
-      margin: 1rem 0;
-      text-align: left;
-    }
-
-    .header-right {
-      flex: 1 1 50px;
-      margin: 1rem 0;
-      text-align: right;
-    }
-
-    .logo {
-      font-weight: 500;
-      font-size: 1.2rem;
-      line-height: 1.2;
-    }
-
-    nav {
-      display: flex;
-      gap: 1.5rem;
-      margin-top: 0.5rem;
-    }
-
-    header a {
-      text-decoration: none;
-      color: var(--texte);
-      font-weight: 500;
-    }
-
-    main {
-      flex: 1;
-      padding: 2rem;
-    }
-
-    .home-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-
-    .project-thumb {
-      overflow: hidden;
-      position: relative;
-    }
-
-    .project-thumb img {
-      width: 100%;
-      height: auto;
-      display: block;
-      transition: transform 0.3s ease;
-    }
-
-    .project-thumb:hover img {
-      transform: scale(1.05);
-    }
-
-    .project-info {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      color: var(--texte);
-    }
-
-    footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 2rem;
-      font-weight: 500;
-      flex-wrap: wrap;
-      width: 100%;
-      background-color: var(--fond);
-      letter-spacing:1px;
-      line-height: 1.4;
-    }
-
-    .footer-left, .footer-center, .footer-right {
-      flex: 1 1 50px;
-    }
-
-    .footer-left {
-      text-align: left;
-    }
-
-    .footer-center {
-      text-align: center;
-    }
-
-    .footer-right {
-      text-align: right;
-    }
-
-    footer a {
-      color: var(--texte);
-      text-decoration: none;
-    }
-
-    span {
-      font-style: italic;
-      vertical-align: sub;
-      font-size: 0.8em;
-      opacity: 1;
-    }
-
-    @media screen and (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
-      nav {
-        justify-content: center;
-        margin-top: 1rem;
-      }
-
-      footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
-      .footer-left,
-      .footer-center,
-      .footer-right {
-        text-align: center;
-      }
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Home — Baptiste Lambert</title>
+<meta name="description" content="Portfolio — galerie de projets.">
+<!-- include styles & fonts above -->
 </head>
 <body>
-  <header>
-    <div class="header-left">
-      <a href="/home">BAPTISTE<br>LAMBERT</a>
-    </div>
-    <div class="header-right">
-      <a href="/work">Travaux<span>/Work</span></a><br>
-      <a href="/about">À propos<span>/about</span></a>
-    </div>
-  </header>
+<header>
+<div class="container header-wrap">
+<div class="header-left">
+<a class="site-name" href="/home">BAPTISTE<br>LAMBERT</a>
+</div>
+<div class="header-center"></div>
+<nav class="header-right" aria-label="Navigation principale">
+<a class="header-link" href="/work">Travaux / Work</a>
+<a class="header-link" href="/about">À propos / About</a>
+</nav>
+</div>
+</header>
 
-  <main>
-    <section class="home-gallery">
-      <div class="project-thumb">
-        <a href="/projet-01">
-          <img src="img/placeholder.jpg" alt="Projet 01">
-          <div class="project-info">
-            <h2>Nom du projet</h2>
-            <p>Type de projet</p>
-          </div>
-        </a>
-      </div>
-    </section>
-  </main>
 
-  <footer>
-    <div class="footer-left">
-      <p>info[@]baptistelambert.com</p>
-      <p>+33 (0)6 64 98 76 24</p>
-    </div>
-    <div class="footer-center">
-      <p>Designer pluridisciplinaire<span>/Multidisciplinary designer</span></p>
-    </div>
-    <div class="footer-right">
-      <a href="https://instagram.com/baptiss_lambert" target="_blank">Instagram</a><br>
-      <a href="https://linkedin.com/in/baptiste-lambert-07517b10b" target="_blank">LinkedIn</a>
-    </div>
-  </footer>
-</body>
-</html>
+<main class="container">
+<section class="gallery" aria-label="Galerie de projets">
+<!-- Tu peux dupliquer .tile pour chaque projet -->
+<article class="tile">
+<a href="/project-smartbatz">
+<div class="ph"><img src="assets/projects/smartbatz/cover.jpg" alt="Smartbatz" loading="lazy"></div>
+<div class="overlay">
+<h3>Smartbatz</h3>
+<div></div>
+<div class="type">Design produit / Product design</div>
+</div>
+</a>
+</article>
+
+
+<article class="tile">
+<a href="/project-roselain">
+<div class="ph"><img src="assets/projects/roselain/cover.jpg" alt="Roselain" loading="lazy"></div>
+<div class="overlay">
+<h3>Roselain</h3>
+<div></div>
+<div class="type">Identité visuelle & DA</div>
+</div>
+</a>
+</article>
+
+
+<article class="tile">
+<a href="/project-tryon">
+<div class="ph"><img src="assets/projects/tryon/cover.jpg" alt="Essai virtuel" loading="lazy"></div>
+<div class="overlay">
+<h3>Essai virtuel chaussures</h3>
+<div></div>
+<div class="type">3D modeling</div>
+</div>
+</a>
+</article>
+</section>
+</main>
+
+
+<footer>
+<div class="container footer-wrap">
+<div class="footer-left">
+<div>info[@]baptistelambert.com</div>
+<div>+33 (0)6 64 98 76 24</div>
+</div>
+<div class="footer-center context">Designer pluridisciplinaire / Multidisciplinary designer</div>
