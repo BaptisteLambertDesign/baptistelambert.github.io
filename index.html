@@ -1,71 +1,527 @@
-<html lang="fr" data-page="home">
+<html>
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Home — Baptiste Lambert</title>
-<meta name="description" content="Portfolio — galerie de projets.">
-<!-- include styles & fonts above -->
-</head>
+    <title>BAPTISTE LAMBERT</title>
+    {block:Description}
+    <meta name="description" content="Baptiste Lambert, designer produit indutriel, industrial product designer from Nantes, France" />
+    {/block:Description}
+    <meta name="keywords" content="design, produit, industriel, product, industrial, portfolio, baptiste lambert" />
+ 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38114237-1']);
+  _gaq.push(['_setDomainName', 'baptistelambert.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  
+https://player.vimeo.com/api/player.js
+
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;1,400&display=swap');
+</style>
+
+<style type="text/css">
+
+body {
+    background-color: #f5efe5;
+    font-family: 'STIX Two Text', serif;
+    font-weight: 500;
+    font-size: 13.5px;
+    line-height: 1.4;
+    letter-spacing:1px;
+    color: #190523;
+    margin: 0;
+}
+
+a {
+    color: #190523;
+}
+
+#header {
+    height: 62px;
+    position: fixed;
+    background-color: #f5efe5;
+    z-index: 5;
+    width: 100%;
+    top: 0px;
+    opacity: 1;
+    font-family: 'STIX Two Text', serif;
+    font-weight: 500;
+    letter-spacing:1px;
+    line-height: 1.4;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#header a {
+text-decoration:none;
+}
+
+#header a:hover {
+    color:none;
+    line-height: O.8em; 
+    margin-bottom: 0px; 
+    padding-bottom: 0px; 
+    border-bottom: solid 1px;
+    color: #190523;
+}
+
+#header-middle {
+    z-index: 1;
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #d91d12;
+}
+
+#logo {
+    float: left;
+    z-index: 1;
+    margin-top: 12px;
+    margin-left: 40px;
+    margin-right: auto;
+    text-align: left;
+}
+
+#header-right {
+    float: right;
+    z-index: 1;
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: 40px;
+    text-align: right;
+}
+
+span {
+    font-size: 80%;
+    vertical-align: sub;
+    font-style: italic;
+}
+
+#footer {
+    height: 62px;
+    position: fixed;
+    background-color: #f5efe5;
+    z-index: 5;
+    width: 100%;
+    bottom: 0px;
+    opacity: 1;
+    font-family: 'STIX Two Text', serif;
+    font-weight: 500;
+    letter-spacing:1px;
+    line-height: 1.4;
+    width: 100%;
+}
+
+#footer a {
+    text-decoration:none;
+}
+
+#footer a:hover {
+    color:none;
+    line-height: O.8em; 
+    margin-bottom: 0px; 
+    padding-bottom: 0px; 
+    text-indent: 40px; 
+    border-bottom: solid 1px;
+    color: #e8e6d8;
+}
+
+
+#footer-left {
+    float: left;
+    z-index: 1;
+    margin-top: 12px;
+    margin-left: 40px;
+    margin-right: auto;
+    text-align: left;
+}
+
+#footer-middle {
+    float: center;
+    z-index: 1;
+    margin-top: 12px;
+    margin-right: auto;
+    text-align: center;
+}
+
+#footer-right {
+    float: right;
+    z-index: 1;
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: 40px;
+    text-align: right;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+      
+.gallery-image {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-image img {
+    height: 400px;
+    width: 400px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+}
+
+.img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+
+.caption-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    opacity: 0.0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.caption-type {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.transparent-box {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.4s ease;
+}
+
+.img-box:hover img {
+    filter: blur(5px);
+}
+
+.img-box:hover .transparent-box {
+    background-color: #f5efe5;
+}
+
+.img-box:hover .caption-title {
+  opacity: 1.0;
+    color: #d91d12;
+}
+.img-box:hover .caption-type {
+  opacity: 1.0;
+    color: #190523;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+    @media screen and (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        margin-top: 1rem;
+      }
+
+      main {
+        flex-direction: column;
+      }
+
+      .project-text {
+        position: static;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+</style>
+
 <body>
-<header>
-<div class="container header-wrap">
-<div class="header-left">
-<a class="site-name" href="/home">BAPTISTE<br>LAMBERT</a>
-</div>
-<div class="header-center"></div>
-<nav class="header-right" aria-label="Navigation principale">
-<a class="header-link" href="/work">Travaux / Work</a>
-<a class="header-link" href="/about">À propos / About</a>
-</nav>
-</div>
-</header>
 
+    <div id="header">
+        <div id="logo">
+            <a href="/">BAPTISTE</br>LAMBERT</a>
+        </div>
+        <div id="header-right">
+            <a href="/">Travaux<span>/Work</span></a></br>
+            <a href="/apropos">À propos<span>/About</span></a>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <div id="footer-left">
+            info[@]baptistelambert.com</br>
+            +33 (0)6 64 98 76 24</br>
+        </div>
+        <div id="footer-right">
+            <a href="https://www.instagram.com/baptiss_lambert/" target="_blank">Instagram</a></br>
+            <a href="https://www.linkedin.com/in/baptiste-lambert-07517b10b/" target="_blank">LinkedIn</a>
+        </div>
+        <div id="footer-middle">
+        Designer pluridisciplinaire<span>/Multidisciplinary designer</span></a>
+        </div>
+    </div>
+    
+    <div class="gallery-image">
+                 <div class="img-box">
+      <a href="/guasha"><img src="https://i.postimg.cc/Vv3JhSFW/gua-sha-01-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>GUA SHA</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Design produit<span>/ Product design</span></p>
+        </div>
+      </div> 
+    </div>
+                     <div class="img-box">
+      <a href="/desperadosexotiqa"><img src="https://i.postimg.cc/d3t8mTVH/WAYx-Despe-01-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>DESPERADOS EXOTIQA</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Design d'espace et mobilier<span>/ Space and furniture design</span></p>
+        </div>
+      </div> 
+    </div>
+             <div class="img-box">
+      <a href="/arfiniochair"><img src="https://i.postimg.cc/V5y73p8Y/Arfinio-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>ARFINIO®</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Modélisation 3D<span>/ 3D modeling</span></p>
+        </div>
+      </div> 
+    </div>
+         <div class="img-box">
+      <a href="/solace"><img src="https://i.postimg.cc/D0byJcm6/Solace-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>SOLACE 9020</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Modélisation 3D<span>/ 3D modeling</span></p>
+        </div>
+      </div> 
+    </div>
+     <div class="img-box">
+      <a href="/roselain"><img src="https://i.postimg.cc/TPW219SP/DSC-0630-V2-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>ROSELAIN</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Identité visuel & direction artistique<span><br>/ Branding & artistic direction</span></p>
+        </div>
+      </div> 
+    </div>
+     <div class="img-box">
+      <a href="/fittingbox"><img src="https://i.postimg.cc/sXPH88HH/mcq-03-86-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>FITTINGBOX</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Modélisation 3D<span>/ 3D modeling</span></p>
+        </div>
+      </div> 
+    </div>
+         <div class="img-box">
+      <a href="/markk"><img src="https://i.postimg.cc/GtX9Ss1s/Markk-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>MARKK</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Design produit<span>/ Product design</span></p>
+        </div>
+      </div> 
+    </div>
+     <div class="img-box">
+      <a href="/ikazboi"><img src="https://i.postimg.cc/xCJGQ28q/IKAZ-BOI-01-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>IKAZ BOI - BRUTAL 2</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Design produit & infographie 3D<span><br>/ Product and 3D graphic design</span></p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <a href="/5pm02"><img src="https://i.postimg.cc/zX0NmZgn/5pm02-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>5PM STORE 02</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Design d'espace et mobilier<span>/ Space and furniture design</span></p>
+        </div>
+      </div> 
+    </div>
+     <div class="img-box">
+      <a href="/biffin"><img src="https://i.postimg.cc/VvJy95K4/DSC04475-1600x1068-V2-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>BIFFIN</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Design graphique<span>/ Graphic design</span></p>
+        </div>
+      </div> 
+    </div>
+     <div class="img-box">
+      <a href="/nike"><img src="https://i.postimg.cc/vTVqHnqR/Nike-01-3-2.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>NIKE TN</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Design produit<span>/ Product design</span></p>
+        </div>
+      </div> 
+    </div>
+     <div class="img-box">
+      <a href="/unrtdasics"><img src="https://i.postimg.cc/WbZ6pf1J/ASICS-WTG-Paris-003-33-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>UNRTD X ASICS</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Infographie 3D<span>/ 3D graphic design</span></p>
+        </div>
+      </div> 
+    </div>
+     <div class="img-box">
+      <a href="/omur"><img src="https://i.postimg.cc/MKVmDrRm/DSC7664-3-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>OMÛR</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Design produit<span>/ Product design</span></p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <a href="/spotify"><img src="https://i.postimg.cc/Gtkd7CbC/SR3-MM-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>SPOTIFY SR3MM</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Infographie 3D<span>/ 3D graphic design</span></p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <a href="/ubique"><img src="https://i.postimg.cc/QNRFf8kR/IMG-4178-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>UBIQUE</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Design produit<span>/ Product design</span></p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <a href="/omega"><img src="https://i.postimg.cc/BbnFTMT4/OMEGA-001-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>OMEGA BASLEWORLD</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Infographie 3D<span>/ 3D graphic design</span></p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <a href="/smartbatz"><img src="https://i.postimg.cc/bwVDHyZS/SB-003-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>SMARTBATZ</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Design produit<span>/ Product design</span></p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <a href="/5pm01"><img src="https://i.postimg.cc/L6PCSm5F/5pm01-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>5pPM STORE 01</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Design d'espace et mobilier<span>/ Space and furniture design</span></p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <a href="/meplat"><img src="https://i.postimg.cc/WpxN9NLH/M-PLAT-08-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>MEPLAT</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Design produit<span>/ Product design</span></p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <a href="/morta"><img src="https://i.postimg.cc/X72CJz3p/Thumbnail-700x700px.jpg" alt="" />
+        <div class="transparent-box">
+            <div class="caption-title">
+            <p>MORTA</p>
+            </div>
+        <div class="caption-type">
+          <p class="opacity-low">Design produit<span>/ Product design</span></p>
+        </div>
+      </div> 
+    </div>
+  </div>
 
-<main class="container">
-<section class="gallery" aria-label="Galerie de projets">
-<!-- Tu peux dupliquer .tile pour chaque projet -->
-<article class="tile">
-<a href="/project-smartbatz">
-<div class="ph"><img src="assets/projects/smartbatz/cover.jpg" alt="Smartbatz" loading="lazy"></div>
-<div class="overlay">
-<h3>Smartbatz</h3>
-<div></div>
-<div class="type">Design produit / Product design</div>
-</div>
-</a>
-</article>
-
-
-<article class="tile">
-<a href="/project-roselain">
-<div class="ph"><img src="assets/projects/roselain/cover.jpg" alt="Roselain" loading="lazy"></div>
-<div class="overlay">
-<h3>Roselain</h3>
-<div></div>
-<div class="type">Identité visuelle & DA</div>
-</div>
-</a>
-</article>
-
-
-<article class="tile">
-<a href="/project-tryon">
-<div class="ph"><img src="assets/projects/tryon/cover.jpg" alt="Essai virtuel" loading="lazy"></div>
-<div class="overlay">
-<h3>Essai virtuel chaussures</h3>
-<div></div>
-<div class="type">3D modeling</div>
-</div>
-</a>
-</article>
-</section>
-</main>
-
-
-<footer>
-<div class="container footer-wrap">
-<div class="footer-left">
-<div>info[@]baptistelambert.com</div>
-<div>+33 (0)6 64 98 76 24</div>
-</div>
-<div class="footer-center context">Designer pluridisciplinaire / Multidisciplinary designer</div>
+</body>
+</html>
